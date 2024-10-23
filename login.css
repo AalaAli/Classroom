@@ -1,0 +1,75 @@
+.loginbox{
+    text-align: center;
+    display: flex;/* flexbox is used to center the div (loginbox)*/
+    justify-content: center;
+    height:800px ;
+    width:500px;
+    background-color: #fff7f0;
+    border: 1px solid   #fff;
+    box-shadow: 1.5px 2px  3px #3f2e1f;
+    border-radius: 30px;
+    position: absolute;/*to control the placement of the loginbox so it can be near the img */
+    left: 500px;
+    top: 100px;
+    z-index: -1;
+}
+.login{/*styling input feild*/
+    width:300px;
+    height: 35px;
+    border-radius: 3px;
+    max-width: 100%;
+    margin: 20px;
+    font-size:16px;
+    color:#333333;
+    border: none;
+    background: transparent;
+    border:none;
+   
+
+}
+h2{
+    margin-bottom: 70px;
+    font-size: 40px;
+}
+.input{
+    width:300px;
+    height: 35px;
+    border:1px solid #3f2e1f;
+    width: max-content;
+    display:flex;
+    align-items: center;
+    border-radius: 5px;
+    margin: 30px 0;
+}
+.signs{
+    color: #3f2e1f;
+    margin: 5px;
+}
+.sign-up{
+    margin-top: 60px;
+}
+button{
+    width:150px ;
+    height: 40px;
+    border-radius:10px;
+    background-color: #f15d30;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #e04110;
+}
+.img-login{
+    margin-top: 410px;
+    margin-left: 250px;
+    width:340px;
+    height: 480px;
+    z-index: 2;
+}
+
+
+.gif{
+    width: 100px;
+   }
+marquee{
+    margin:30px ;
+   }

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="class.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <title>Classrom</title>
+
+</head>
+
+
+<body>
+  <!------------------navigation bar------------------>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="#welcome"><img class="logoimg" src="images/logo.png" alt="logo"></a>
+     O
+    </div>
+    <ul class="nav">
+      <li class="nav-item"><a href="#teacher">Teacher</a></li>
+      <li class="nav-item"><a href="#news">Class News</a></li>
+      <li class="nav-item"><a href="#table">Time Table</a></li>
+      <li class="nav-item"><a href="#links">Class links</a></li>
+      <li class="nav-item"><a href="#resources">Resources</a></li>
+      <li class="nav-item"><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+   <!------------------welcome page------------------>
+  <div class="link" id="welcome"></div> <!--additional division to link abbove each page for styling purposes-->
+  <div class="welcome">
+    <div class="welcomeH">
+      <h1>Welcome to
+        <br>our Class!</br>
+      </h1>
+      <h4>Grade six - Section A</h4>
+    </div>
+    <img src="images/welcome.png" alt="shapes" class="shapes">
+  </div>
+  <!------------------teacher page------------------>
+  <div class="link" id="teacher"></div><!--additional division to link abbove each page for styling purposes-->
+  <div class="teacher">
+    <img src="images/teacher.png" alt="teacher" class="teacherimg">
+    <div>
+      <h2 class="teacherH">Teacher<br> Cassandra Lopez</h2>
+      <p clas="techerp">Good day to everyone! Let's enjoy learning<br> together this school year.
+      </p>
+      <p>
+        I'll take you through our hub to get to know<br> our agenda ahead.
+      </p>
+    </div>
+  </div>
+  <!------------------news page------------------>
+  <div class="link" id="news"></div><!--additional division to link abbove each page for styling purposes-->
+  <h2 class="newsH">Class News</h2>
+  <div class="news"><!--I used flex box so I added a div that contains each img and iths paragraph-->
+    <div class="box">
+      <img class="kidimg" src="images/kid.jpg" alt="kids">
+      <div class="mainbox">
+        <h4 class="kidh">Career Day is Here!</h4>
+        <p class="newsp">We will be having our Career Day next week! Dress up in<br> your dream career attire and tell
+          us about it.<br> </p>
+        <p class="newsp"> If you have any questions about this, feel free to<br> message me at
+          hello<font face="arial">@</font>reallygreatsite.com.</p>
+      </div>
+    </div>
+    <div class="box">
+      <h4 class="kidh">Submit your<br> Art Entries</h4>
+      <p>Our annual Inter-School Art Competition will be held next week. Make sure to email and submit your entries at
+        hello<font face="arial">@</font>reallygreatsite.com. Special prizes await our little artists!</p>
+      <img class="kid2img" src="images/kid2.jpg" alt="kids">
+    </div>
+    <div class="box">
+      <h4 class="kidh"> Get ready for Science Fair</h4>
+      <p>Discover fun experiments and cool exhibitions at our annual Science Fair! Our Science department prepared a lot
+        of interactive activities that you can try. You’ll also get to meet some scientists.</p>
+      <img class="kid2img" src="images/kids3.jpg" alt="kids">
+    </div>
+  </div>
+<!------------------timetable page------------------>
+  <div id="table" class="schedule"><!--the div here contains the image as well as the whole table to diplay as flex-->
+    <img src="images/Shapes table.png" alt="shapes" class="tableimg">
+    <div class="timetable"><!--I used a div for styling purposes *add margin-->
+      <h2 class="newsH hr">Daily Schedule</h2>
+      <table>
+        <colgroup>
+          <col span="1" style="background-color: #B4A5E4; font-family: monospace;"><!--I used colgroup to change bgcolor *colspan is neccesary btw -->
+        </colgroup>
+        <tr class="days">
+          <th></th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+
+        </tr>
+        <tr>
+          <th class="time">08:00 AM</th>
+          <td>Homeroom</td>
+          <td>Homeroom</td>
+          <td>Homeroom</td>
+          <td>Homeroom</td>
+          <td>Homeroom</td>
+        </tr>
+        <tr>
+          <th class="time">09:00 AM</th>
+          <td>Science</td>
+          <td>Science</td>
+          <td>Science</td>
+          <td>Science</td>
+          <td>Physical Education</td>
+        </tr>
+        <tr>
+          <th class="time">10:00 AM</th>
+          <td>Recess</td>
+          <td>Recess</td>
+          <td>Recess</td>
+          <td>Recess</td>
+          <td>Recess</td>
+        </tr>
+        <tr>
+          <th class="time">11:00 AM</th>
+          <td>English</td>
+          <td>English</td>
+          <td>Health</td>
+          <td>English</td>
+          <td>English</td>
+        </tr>
+        <tr>
+          <th class="time">12:00 PM</th>
+          <td>Lunch</td>
+          <td>Lunch</td>
+          <td>Lunch</td>
+          <td>Lunch</td>
+          <td>Lunch</td>
+        </tr>
+        <tr>
+          <th class="time">01:00 PM</th>
+          <td>Math</td>
+          <td>Math</td>
+          <td>Math</td>
+          <td>Elective</td>
+          <td>Math</td>
+        </tr>
+        <tr>
+          <th class="time">02:00 PM</th>
+          <td>History</td>
+          <td>Values Education</td>
+          <td>Music<font face="arial">&</font> Arts</td>
+          <td>History</td>
+          <td>History</td>
+        </tr>
+        <tr>
+          <th class="time">03:00 PM</th>
+          <td>Dismissal</td>
+          <td>Dismissal</td>
+          <td>Dismissal</td>
+          <td>Dismissal</td>
+          <td>Dismissal</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!------------------classlinks page------------------>
+  <div class="link" id="links"></div><!--additional division to link abbove each page for styling purposes-->
+  <div class="classlinks">
+    <h2 class="linkh">Links to Classes</h2>
+    <div class="row"><!--each row has 3 links and each div (row)I used flexbox-->
+      <a href="https://dancingclassrooms.org/programs/homeroom-edition/" target="_blank">
+        <image src="images/homeroom.png" class="classimg"></image>
+      </a>
+      <a href="https://the-english-classroom.com/" target="_blank">
+        <image src="images/english.png" class="classimg"></image>
+      </a>
+      <a href="https://classroomscience.org/" target="_blank">
+        <image src="images/science.png" class="classimg"></image>
+      </a>
+    </div>
+    <div class="row">
+      <a href="https://www.themathclassroom.com.sg/" target="_blank">
+        <image src="images/math.png" class="classimg"></image>
+      </a>
+      <a href="https://www.history.com/classroom" target="_blank">
+        <image src="images/history.png" class="classimg"></image>
+      </a>
+      <a href="https://througheducation.com/incorporate-art-music-into-classroom-learning/" target="_blank">
+        <image src="images/music.png" class="classimg"></image>
+      </a>
+
+    </div>
+  </div>
+  <!------------------resources page------------------>
+  <div class="link" id="resources"></div><!--additional division to link abbove each page for styling purposes-->
+  <h2 class="hr">Additional Resources</h2>
+  <div class="resource"><!--div contains 3 main divs to display as flex-->
+    <div><!--each div has image header and paragrph 3 in total-->
+      <img class="boximg" src="images/shake.jpg">
+      <h4 class="imgh">Learn Math<br> Through Songs</h4>
+      <p>Make Math more fun with these
+        <br> catchy jingles!
+      </p>
+    </div>
+    <div>
+      <img class="boximg" src="images/Science-Museum.png">
+      <h4 class="imgh">Astronomy is <br>Amazing</h4>
+      <p>A star map guide for your next <br> stargazing night.</p>
+    </div>
+    <div>
+      <img class="boximg" src="images/Ukulelegirl.webp">
+      <h4 class="imgh">DIY Music<br> Instruments</h4>
+      <p>Use items around your house to <br> make music.</p>
+    </div>
+  </div>
+   <!------------------footer------------------>
+   <footer>
+    <div>
+      <div class="email">
+        <span class="sign material-symbols-outlined"> mail </span>
+        <p>: hello<font face="arial">@</font>reallygreatsite.com</p>
+      </div>
+      <div class="phon">
+        <span class="sign material-symbols-outlined"> phone</span>
+        <p>
+          <font face="arial">: +49 56981 28-3333</font>
+        </p>
+      </div>
+      <div class="phon">
+        <span class="sign material-symbols-outlined"> language</span>
+        <p>
+          : <font face="arial" style="text-decoration: underline;"> <a href="#">www.ourschool.com</a></font>
+        </p>
+      </div>
+    </div>
+    <!------------------footer------------------>
+    <div class="footer_list">
+      <div>
+        <ul>
+          <li>
+            <h5>About</h5>
+          </li>
+          <li>Our School </li>
+          <li>Summer training</li>
+          <li>Fun Labs</li>
+          <li>Cool Sports</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <h5>Wingrove School</h5>
+          </li>
+          <li>Our Mission</li>
+          <li>Grades</li>
+          <li>Key Stage</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <h5>Activities</h5>
+          </li>
+          <li>Enjoy Our Library</li>
+          <li>Community Forums</li>
+          <li>Sports <font face="arial">&</font> games</li>
+          <li>Arts<font face="arial">&</font>Crafts </li>
+          <li> School Plays</li>
+
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,367 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: BodyGrotesqueFit;
+    src: url("fonts/body-grotesque-fit-regular.ttf");
+
+}
+
+@font-face {
+    font-family: BodyGrotesqueBold;
+    src: url("fonts/body-grotesque-fit-trial-bold.ttf")
+}
+
+body {
+    background-color: #FFF1E5;
+    color: #3E2B96;
+    font-family: BodyGrotesqueFit;
+
+}
+/*------------------welcome page------------------*/
+.welcome {
+    color: #3E2B96;
+    font-weight: bold;
+    display: flex;
+    margin: 90px 0 60px 60px;
+    justify-content: space-around;
+}
+
+.shapes {
+    width: 530px;
+    height: 640px;
+    margin: 0 50px;
+}
+
+.welcomeH {
+    margin-top: 150px;
+    font-family: BodyGrotesqueBold;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+h4 {
+    font-size: 35px;
+}
+/*------------------navigation bar------------------*/
+
+.nav {
+    text-decoration: none;
+    justify-content: end;
+    display: flex;
+    margin: 15px;
+    margin-left: 50px;
+}
+.nav-item {
+    font-family: BodyGrotesqueBold;
+    font-size: 20px;
+    margin: 0 20px;
+    transition: opacity 0.6s ease;
+}
+
+a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.nav:hover> :not(:hover) {
+    opacity: 0.6;
+}
+
+.nav-item:hover {
+    transform: scale(1.1);
+}
+
+.navbar {
+    background-color: #FFF1E5;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+    padding: 5px;
+    display: flex;
+    z-index: 3;/*because in the login page I used z-index 1 and 2 */
+
+}
+
+.logo {
+    font-family: BodyGrotesqueBold;
+    display: flex;
+    font-size: 25px;
+    margin: 5px 10px;
+
+}
+
+.logoimg {
+    width: 100px;
+    height: 80px;
+    margin: -10px 10px;
+}
+
+.h3 {
+    margin-top: 15px;
+}
+
+.search {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    border: #333333 1px solid;
+    padding: 10px;
+    border-radius: 28px;
+    background: #f6f6f6;
+    width: 400px;
+    height: 25px;
+    margin-top: 15px;
+}
+
+.search-input {
+    font-size: 16px;
+    color: #333333;
+    margin-left: 14px;
+    border: none;
+    background: transparent;
+    width: 400px;
+    height: 25px;
+
+}
+/*------------------teacher page------------------*/
+.teacher {
+    margin-top: 170px;
+    font-family: BodyGrotesqueBold;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    margin-right: 90px;
+}
+
+.teacherp {
+    text-align: center;
+}
+
+.teacherH {
+    font-size: 50px;
+    color: #F63B00;
+    text-align: center;
+
+
+}
+
+.teacherimg {
+    width: 550px;
+    height: 500px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+/*------------------news page------------------*/
+.newsH {
+
+    margin: 60px;
+    font-size: 50px;
+    margin-right: 60px;
+    font-family: BodyGrotesqueBold;
+}
+
+.kidimg {
+    width: 550px;
+    height: 350px;
+    border-radius: 40px;
+}
+
+.kidh {
+    color: #F63B00;
+    font-family: BodyGrotesqueBold;
+    font-size: 40px;
+    margin-top: 0px;
+
+}
+
+.box {
+    font-family: BodyGrotesqueFit;
+    margin: 0 60px;
+    font-size: 20px;
+}
+
+.kid2img {
+    width: 260px;
+    height: 260px;
+    border-radius: 40px;
+    margin-top: 60px;
+}
+
+.news {
+    display: flex;
+}
+
+.mainbox {
+    margin-top: 60px;
+}
+/*-------------------resource page--------------*/
+.resource {
+    margin: 100px 40px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.boximg {
+    width: 340px;
+    height: 300px;
+    border-radius: 35px;
+
+}
+
+.hr {
+    text-align: center;
+    margin: 60px;
+    font-size: 50px;
+    margin-right: 60px;
+    font-family: BodyGrotesqueBold;
+}
+
+.imgh {
+    color: #F63B00;
+    font-size: 30px;
+    font-family: BodyGrotesqueBold;
+    margin-bottom: 0px;
+}
+/*------------------timetable page------------------*/
+table tr td {
+    background-color: #FFFF;
+}
+
+table {
+    margin-bottom: 30px 40px;
+    width: 800px;
+    height: 510px;
+    color: #000;
+    border: 3px solid #FFF1E5;
+    text-align: center;
+}
+
+tr {
+    padding: 10px;
+}
+
+.days {
+    background-color: #FF8D72;
+}
+
+.tableimg {
+    width: 410px;
+    height: 570px;
+    margin-top: 140px;
+}
+
+.schedule {
+    margin: 80px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.timetable {
+    margin-right: 30px;
+}
+
+.link { /*--additional division to link abbove each page for styling purposes--*/
+    height: 40px;
+    width: auto;
+}
+
+.time {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*I had to specify a web safe font because my custom font doesn't sipport symbols nor numbers*/
+}
+/*------------------class links page------------------*/
+.linkh {
+    margin-top: 40px;
+    font-size: 45px;
+    text-align: center;
+    font-family: BodyGrotesqueBold;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.classimg {
+    width: 270px;
+    height: 230px;
+    margin: 30px 0px;
+    transition: ease;
+}
+
+.row a {
+    transition: 0.6s ease;
+}
+
+.row a:hover {
+    transform: scale(1.1);
+}
+/*------------------footer ------------------*/
+
+.email {
+    margin: 80px 0px 100px 100px;
+    display: flex;
+    font-size: 15px;
+}
+
+.phon {
+    margin: -100px 0px 100px 100px;
+    display: flex;
+    font-size: 15px;
+}
+/*----styling google font symbols----*/
+.sign {
+    margin: 15px 10px 10px 10px;
+}
+
+.footer_list {
+    display: flex;
+    font-size: 15px;
+    margin: 40px 80px;
+    margin-right: 100px;
+    list-style-type: none;
+    text-decoration: none;
+    margin-bottom: 0px;
+}
+
+footer {
+    border-top: 4px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0dbc8;
+    list-style-type: none;
+    text-decoration: none;
+    margin-bottom: 0px;
+    margin: -10px -10px;
+}
+
+.footer_list li:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+li {
+    margin: 10px;
+    list-style-type: none;
+}
+
+.footer_list li h5 {
+    font-size: 18px;
+}
+.footer_list div{
+    float: right;
+    width: 45%;
+}
